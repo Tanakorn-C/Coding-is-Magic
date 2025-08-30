@@ -1,8 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bb23bn3t54rl4"]
+[gd_scene load_steps=3 format=3 uid="uid://bb23bn3t54rl4"]
 
 [ext_resource type="PackedScene" uid="uid://b0nulisnnbxwt" path="res://Player/player.tscn" id="1_rupst"]
+[ext_resource type="Texture2D" uid="uid://ckty0b5jhuw0" path="res://Player/Sprites/ClFaigZVYAEDMqL.jpg" id="2_wt17y"]
 
 [node name="Playground" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_rupst")]
-position = Vector2(236, 134)
+position = Vector2(247, 174)
+
+[node name="ClFaigZvyaedMqL" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(240.375, 136.125)
+scale = Vector2(0.467529, 0.468316)
+texture = ExtResource("2_wt17y")
