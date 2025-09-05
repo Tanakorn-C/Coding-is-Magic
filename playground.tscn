@@ -6,10 +6,10 @@
 [node name="Playground" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_rupst")]
-position = Vector2(247, 174)
+position = Vector2(155, 126)
 
 [node name="ClFaigZvyaedMqL" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(240.375, 136.125)
-scale = Vector2(0.467529, 0.468316)
+position = Vector2(160, 90)
+scale = Vector2(0.3125, 0.3125)
 texture = ExtResource("2_wt17y")
