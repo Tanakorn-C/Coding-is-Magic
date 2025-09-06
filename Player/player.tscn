@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://b0nulisnnbxwt"]
+[gd_scene load_steps=13 format=3 uid="uid://b0nulisnnbxwt"]
 
 [ext_resource type="Script" uid="uid://bsaukmejyj7bq" path="res://Player/Script/player.gd" id="1_4ntmi"]
 [ext_resource type="Texture2D" uid="uid://bfp2kp6j3ufk6" path="res://Player/Sprites/ExamplePlayerSprite.png" id="1_l8h54"]
+[ext_resource type="AudioStream" uid="uid://cgyl0aelj31ny" path="res://assets/audio/walk_ground.wav" id="3_btcbx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_edjgo"]
 radius = 10.0499
@@ -151,3 +152,12 @@ hframes = 21
 libraries = {
 &"": SubResource("AnimationLibrary_00tjw")
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+rotation_smoothing_enabled = true
+rotation_smoothing_speed = 8.0
+
+[node name="sfx_walk" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_btcbx")
