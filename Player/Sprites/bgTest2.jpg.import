@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqnph23jhpadx"
-path="res://.godot/imported/aesthetic-pixel-art-hd-tw4g4yk63da4tj6x.jpg-e50f2991659f84a3b7a87ecd38f49761.ctex"
+uid="uid://ckty0b5jhuw0"
+path="res://.godot/imported/bgTest2.jpg-a6ec0940ad556a816bfe7260def92a94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Sprites/aesthetic-pixel-art-hd-tw4g4yk63da4tj6x.jpg"
-dest_files=["res://.godot/imported/aesthetic-pixel-art-hd-tw4g4yk63da4tj6x.jpg-e50f2991659f84a3b7a87ecd38f49761.ctex"]
+source_file="res://Player/Sprites/bgTest2.jpg"
+dest_files=["res://.godot/imported/bgTest2.jpg-a6ec0940ad556a816bfe7260def92a94.ctex"]
 
 [params]
 

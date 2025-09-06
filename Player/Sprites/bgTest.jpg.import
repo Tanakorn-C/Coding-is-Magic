@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckty0b5jhuw0"
-path="res://.godot/imported/ClFaigZVYAEDMqL.jpg-6b349e6133fcb8cff3140a79c8b8b9a0.ctex"
+uid="uid://dqnph23jhpadx"
+path="res://.godot/imported/bgTest.jpg-5dae1c02a857b0aed164b82ff9b276c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Sprites/ClFaigZVYAEDMqL.jpg"
-dest_files=["res://.godot/imported/ClFaigZVYAEDMqL.jpg-6b349e6133fcb8cff3140a79c8b8b9a0.ctex"]
+source_file="res://Player/Sprites/bgTest.jpg"
+dest_files=["res://.godot/imported/bgTest.jpg-5dae1c02a857b0aed164b82ff9b276c1.ctex"]
 
 [params]
 

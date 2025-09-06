@@ -2,28 +2,45 @@ class_name Player
 extends CharacterBody2D
 
 @export var move_speed: float = 100.0
+@export var run_multiplier: float = 6.6
+@export var stamina_max: float = 100.0
+@export var stamina_recover: float = 20.0   # per second
+@export var stamina_cost: float = 35.0      # per second while running
+
 var direction: Vector2 = Vector2.ZERO
 var cardinal_direction: Vector2 = Vector2.DOWN
-var state := "idle"  # "idle" | "walk"
+var state: String = "idle"   # "idle" | "walk" | "run"
+var stamina: float = 0.0
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var sprite: Sprite2D = $Sprite2D
 
 func _ready() -> void:
+	stamina = stamina_max
 	state = "idle"
 	_update_animation()
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
+	# อ่านอินพุตที่นี่ (ไว) แต่เลื่อนตัวใน _physics_process
 	direction = Input.get_vector("left", "right", "up", "down")
+	var want_run := Input.is_action_pressed("run") and stamina > 0.0 and direction != Vector2.ZERO
+
 	if direction.length() > 0.0:
-		state = "walk"
+		state = "run" if want_run else "walk"
 		_update_cardinal(direction)
 	else:
 		state = "idle"
 
+	# จัดการสตามินา
+	if state == "run":
+		stamina = max(0.0, stamina - stamina_cost * delta)
+	else:
+		stamina = min(stamina_max, stamina + stamina_recover * delta)
+
 func _physics_process(_delta: float) -> void:
 	var move_dir := direction.normalized() if direction.length() > 0.0 else Vector2.ZERO
-	velocity = move_dir * move_speed
+	var speed := move_speed * (run_multiplier if state == "run" else 1.0)
+	velocity = move_dir * speed
 	move_and_slide()
 	_update_animation()
 
@@ -44,15 +61,13 @@ func _dir_suffix() -> String:
 
 func _update_animation() -> void:
 	# ตั้ง flip_h ให้ถูกก่อน แล้วค่อยเล่นคลิป
-	# ขวา = ไม่พลิก, ซ้าย = พลิก, ขึ้น/ลง = แล้วแต่จะชอบ (ส่วนใหญ่ไม่พลิก)
 	if cardinal_direction == Vector2.LEFT:
 		sprite.flip_h = true
 	elif cardinal_direction == Vector2.RIGHT:
 		sprite.flip_h = false
-	# ถ้าเป็น up/down จะคงค่าจากครั้งก่อน หรือจะบังคับปิดก็ได้:
-	# else:
-	#     sprite.flip_h = false
-	# 3
-	var anim_name := "%s_%s" % [state, _dir_suffix()]  # เช่น "walk_side", "idle_up"
+	# up/down จะคงค่าจากก่อนหน้า หรือจะบังคับปิดก็ได้
+
+	var base := (state if state != "run" else "walk")  # ถ้ายังไม่มีแอนิเมชัน run ให้ใช้ walk แทน
+	var anim_name := "%s_%s" % [base, _dir_suffix()]   # เช่น "walk_side", "idle_up"
 	if animation_player.current_animation != anim_name:
 		animation_player.play(anim_name)
