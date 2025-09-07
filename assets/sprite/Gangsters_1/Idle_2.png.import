@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqnph23jhpadx"
-path="res://.godot/imported/bgTest.jpg-5dae1c02a857b0aed164b82ff9b276c1.ctex"
+uid="uid://ghswnirc1uyq"
+path="res://.godot/imported/Idle_2.png-efdbcf834ad6b52c19abef0d5ccb71e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Sprites/bgTest.jpg"
-dest_files=["res://.godot/imported/bgTest.jpg-5dae1c02a857b0aed164b82ff9b276c1.ctex"]
+source_file="res://assets/sprite/Gangsters_1/Idle_2.png"
+dest_files=["res://.godot/imported/Idle_2.png-efdbcf834ad6b52c19abef0d5ccb71e5.ctex"]
 
 [params]
 

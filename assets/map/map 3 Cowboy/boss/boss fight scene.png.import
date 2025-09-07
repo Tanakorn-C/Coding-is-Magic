@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dspd078ndafxo"
-path="res://.godot/imported/testBg3.png-8d359064087971975a31b749bfac696a.ctex"
+uid="uid://buaxg8x1cwadn"
+path="res://.godot/imported/boss fight scene.png-c20ca588e750b3fa2350ac5a2a2fc6c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scripts/world/testBg3.png"
-dest_files=["res://.godot/imported/testBg3.png-8d359064087971975a31b749bfac696a.ctex"]
+source_file="res://assets/map/map 3 Cowboy/boss/boss fight scene.png"
+dest_files=["res://.godot/imported/boss fight scene.png-c20ca588e750b3fa2350ac5a2a2fc6c3.ctex"]
 
 [params]
 

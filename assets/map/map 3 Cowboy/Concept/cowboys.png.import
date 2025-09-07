@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckty0b5jhuw0"
-path="res://.godot/imported/bgTest2.jpg-a6ec0940ad556a816bfe7260def92a94.ctex"
+uid="uid://cpyj2gv388su0"
+path="res://.godot/imported/cowboys.png-f3b44bb6e34c92bc812c46db3e9a5ace.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Sprites/bgTest2.jpg"
-dest_files=["res://.godot/imported/bgTest2.jpg-a6ec0940ad556a816bfe7260def92a94.ctex"]
+source_file="res://assets/map/map 3 Cowboy/Concept/cowboys.png"
+dest_files=["res://.godot/imported/cowboys.png-f3b44bb6e34c92bc812c46db3e9a5ace.ctex"]
 
 [params]
 

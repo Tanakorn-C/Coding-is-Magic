@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbfemrle22r14"]
+
+[ext_resource type="PackedScene" uid="uid://qsgtya0njkqp" path="res://scenes/3-Cowboy/player.tscn" id="1_w76h3"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_07vaw"]
+
+[node name="game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_w76h3")]
+position = Vector2(161, 127)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-1, -37)
+position_smoothing_enabled = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(149, 172)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(10, 8)
+shape = SubResource("WorldBoundaryShape2D_07vaw")

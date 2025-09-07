@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb23bn3t54rl4"]
+
+[ext_resource type="PackedScene" uid="uid://b0nulisnnbxwt" path="res://scenes/Test/Player/player.tscn" id="1_rupst"]
+[ext_resource type="Texture2D" uid="uid://ckty0b5jhuw0" path="res://scenes/Test/Player/Sprites/bgTest2.jpg" id="2_wt17y"]
+
+[node name="Playground" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_rupst")]
+position = Vector2(155, 126)
+
+[node name="ClFaigZvyaedMqL" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(200, 135)
+scale = Vector2(0.390625, 0.46875)
+texture = ExtResource("2_wt17y")
