@@ -1,9 +1,26 @@
-[gd_scene load_steps=33 format=3 uid="uid://qsgtya0njkqp"]
+[gd_scene load_steps=38 format=3 uid="uid://qsgtya0njkqp"]
 
 [ext_resource type="Script" uid="uid://ynlrnsujyaa2" path="res://scenes/3-Cowboy/scripts/player.gd" id="1_2ikg6"]
 [ext_resource type="Texture2D" uid="uid://c2fj0ncpjn1hd" path="res://assets/sprite/Gangsters_1/Idle.png" id="1_dmn1d"]
+[ext_resource type="Texture2D" uid="uid://2k2tarpodecm" path="res://assets/sprite/Gangsters_1/Shot.png" id="2_5lrkh"]
 [ext_resource type="Texture2D" uid="uid://37fyd5dbdtax" path="res://assets/sprite/Gangsters_1/Jump.png" id="3_4vvwj"]
 [ext_resource type="Texture2D" uid="uid://ccqiuloh52tv8" path="res://assets/sprite/Gangsters_1/Run.png" id="4_5lrkh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jufxg"]
+atlas = ExtResource("2_5lrkh")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mcmyw"]
+atlas = ExtResource("2_5lrkh")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qoxpw"]
+atlas = ExtResource("2_5lrkh")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urhdb"]
+atlas = ExtResource("2_5lrkh")
+region = Rect2(384, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_py3eb"]
 atlas = ExtResource("1_dmn1d")
@@ -113,6 +130,23 @@ region = Rect2(1152, 0, 128, 128)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_jufxg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mcmyw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qoxpw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urhdb")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_py3eb")
 }, {
 "duration": 1.0,
@@ -205,20 +239,20 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_dmn1d"]
-radius = 35.0143
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4vvwj"]
+radius = 17.0
+height = 70.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_2ikg6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -64)
+position = Vector2(11, -64)
 sprite_frames = SubResource("SpriteFrames_tr3ve")
-animation = &"jump"
+animation = &"run"
 autoplay = "idle"
-frame = 7
-frame_progress = 0.910886
+frame_progress = 0.786862
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -35)
-shape = SubResource("CircleShape2D_dmn1d")
+shape = SubResource("CapsuleShape2D_4vvwj")
