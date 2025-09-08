@@ -2,7 +2,7 @@ class_name Player
 extends CharacterBody2D
 
 @export var move_speed: float = 100.0
-@export var run_multiplier: float = 20.0
+@export var run_multiplier: float = 2.0
 @export var stamina_max: float = 100.0
 @export var stamina_recover: float = 20.0   # per second
 @export var stamina_cost: float = 35.0      # per second while running
@@ -15,6 +15,7 @@ var stamina: float = 0.0
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var sfx_walk = $sfx_walk
+@onready var sfx_run = $sfx_run
 func _ready() -> void:
 	stamina = stamina_max
 	state = "idle"
@@ -38,11 +39,20 @@ func _process(delta: float) -> void:
 		stamina = min(stamina_max, stamina + stamina_recover * delta)
 		
 	if state == "walk":
+		if sfx_run.playing: #stop sfx_run 
+			sfx_run.stop()  
 		if not sfx_walk.playing:
 			sfx_walk.play()
-	else:
+	elif state == "run":
+		if sfx_walk.playing: #stop sfx_walk
+			sfx_walk.stop()
+		if not sfx_run.playing:
+			sfx_run.play()
+	else: #idle
 		if sfx_walk.playing:
 			sfx_walk.stop()
+		if sfx_run.playing: 
+			sfx_run.stop()
 
 func _physics_process(_delta: float) -> void:
 	var move_dir := direction.normalized() if direction.length() > 0.0 else Vector2.ZERO

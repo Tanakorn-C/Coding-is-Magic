@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfp2kp6j3ufk6"
-path="res://.godot/imported/ExamplePlayerSprite.png-20258188b6cfb38fa4e09de2e0eb8d3a.ctex"
+uid="uid://dqnph23jhpadx"
+path="res://.godot/imported/bgTest.jpg-9f460fc14544d75d20a557e017bae5eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Test/Player/Sprites/ExamplePlayerSprite.png"
-dest_files=["res://.godot/imported/ExamplePlayerSprite.png-20258188b6cfb38fa4e09de2e0eb8d3a.ctex"]
+source_file="res://scenes/1-MagicForest/Player/Sprites/bgTest.jpg"
+dest_files=["res://.godot/imported/bgTest.jpg-9f460fc14544d75d20a557e017bae5eb.ctex"]
 
 [params]
 
