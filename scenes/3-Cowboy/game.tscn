@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cbfemrle22r14"]
 
 [ext_resource type="Texture2D" uid="uid://clglo4trhbrh4" path="res://assets/map/map 3 Cowboy/Concept/image.png" id="1_ib567"]
-[ext_resource type="PackedScene" uid="uid://qsgtya0njkqp" path="res://scenes/3-Cowboy/player.tscn" id="1_w76h3"]
+[ext_resource type="PackedScene" uid="uid://qsgtya0njkqp" path="res://scenes/3-Cowboy/players/player.tscn" id="1_w76h3"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ib567"]
 
