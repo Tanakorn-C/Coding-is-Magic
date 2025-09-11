@@ -14,7 +14,7 @@ position = Vector2(161, 127)
 position = Vector2(-1, -37)
 rotation_smoothing_enabled = true
 
-[node name="ClFaigZvyaedMqL" type="Sprite2D" parent="."]
+[node name="Map" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(262, 90)
 scale = Vector2(0.938108, 1.12202)
