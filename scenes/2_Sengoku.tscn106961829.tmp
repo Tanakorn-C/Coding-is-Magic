@@ -532,3 +532,4 @@ tile_set = SubResource("TileSet_i4rc2")
 
 [node name="Player" parent="." instance=ExtResource("2_w54du")]
 position = Vector2(157, 116)
+script = null
