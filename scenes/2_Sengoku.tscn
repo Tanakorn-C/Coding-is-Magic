@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=4 uid="uid://dxthunff16sjc"]
 
 [ext_resource type="Texture2D" uid="uid://d1vypxe0ejcnj" path="res://assets/map/map 2  Sengoku/Tilesets/Grass-01.png" id="1_o47dn"]
-[ext_resource type="PackedScene" uid="uid://kw7kowdf1ef7" path="res://scripts/2-Sengoku/player/player.tscn" id="2_w54du"]
+[ext_resource type="PackedScene" uid="uid://bt7828bvblfph" path="res://scripts/2-Sengoku/player/player.tscn" id="2_w54du"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7xsi3"]
 texture = ExtResource("1_o47dn")
@@ -531,4 +531,4 @@ tile_map_data = PackedByteArray("AAD7//7/AAAAAAUAAAD7////AAAAAAUAAAD7/wAAAAAAAAU
 tile_set = SubResource("TileSet_i4rc2")
 
 [node name="Player" parent="." instance=ExtResource("2_w54du")]
-position = Vector2(157, 116)
+position = Vector2(146, 139)
