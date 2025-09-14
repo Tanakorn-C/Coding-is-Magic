@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Coding Is Magic Project"
-run/main_scene="uid://cbfemrle22r14"
+run/main_scene="uid://c3dr5tvihen87"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="uid://c2qqpt8uvktfb"
+
+[autoload]
+
+EvebtBus="*res://evebt_bus.gd"
 
 [display]
 

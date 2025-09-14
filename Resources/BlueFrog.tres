@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://b8128tyjbtpoo"]
+
+[ext_resource type="Texture2D" uid="uid://b2v0dpw3muvud" path="res://assets/sprite/CTB_test_sprite/froakie.jpg" id="1_jlokt"]
+[ext_resource type="Script" uid="uid://ctvw1piffuw6s" path="res://CTB_Battle/Character.gd" id="2_o7gwo"]
+[ext_resource type="Texture2D" uid="uid://cmlc3lr51fa4x" path="res://assets/sprite/CTB_test_sprite/64x64/BlueF64.png" id="3_25x22"]
+[ext_resource type="PackedScene" uid="uid://h8fertjf6hxg" path="res://Resources/vfx.tscn" id="4_ofay5"]
+
+[resource]
+script = ExtResource("2_o7gwo")
+title = "BlueFrog"
+icon = ExtResource("1_jlokt")
+texture = ExtResource("3_25x22")
+agility = 17
+vfx_node = ExtResource("4_ofay5")
+metadata/_custom_type_script = "uid://ctvw1piffuw6s"

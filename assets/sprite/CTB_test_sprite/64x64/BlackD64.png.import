@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bduoikyw43rlw"
-path="res://.godot/imported/WATER GROUND 4.png-2799d944530b3fe15a3d36c409e04a9f.ctex"
+uid="uid://cro1d0p14rftt"
+path="res://.godot/imported/BlackD64.png-48a23155fdc161b3aedb5e0c1ee0930d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map/map 2  Sengoku/tilesets/WATER GROUND 4.png"
-dest_files=["res://.godot/imported/WATER GROUND 4.png-2799d944530b3fe15a3d36c409e04a9f.ctex"]
+source_file="res://assets/sprite/CTB_test_sprite/64x64/BlackD64.png"
+dest_files=["res://.godot/imported/BlackD64.png-48a23155fdc161b3aedb5e0c1ee0930d.ctex"]
 
 [params]
 

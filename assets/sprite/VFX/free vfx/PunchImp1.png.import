@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bduoikyw43rlw"
-path="res://.godot/imported/WATER GROUND 4.png-2799d944530b3fe15a3d36c409e04a9f.ctex"
+uid="uid://bdeul234unoac"
+path="res://.godot/imported/PunchImp1.png-c9ca9e4a5cf9016cc40104baf25e280e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map/map 2  Sengoku/tilesets/WATER GROUND 4.png"
-dest_files=["res://.godot/imported/WATER GROUND 4.png-2799d944530b3fe15a3d36c409e04a9f.ctex"]
+source_file="res://assets/sprite/VFX/free vfx/PunchImp1.png"
+dest_files=["res://.godot/imported/PunchImp1.png-c9ca9e4a5cf9016cc40104baf25e280e.ctex"]
 
 [params]
 

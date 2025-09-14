@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bduoikyw43rlw"
-path="res://.godot/imported/WATER GROUND 4.png-2799d944530b3fe15a3d36c409e04a9f.ctex"
+uid="uid://cuj0batjlh55"
+path="res://.godot/imported/pikachu-lets-go.jpg-f13b692b117ab745fc9ce1422ebd8768.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map/map 2  Sengoku/tilesets/WATER GROUND 4.png"
-dest_files=["res://.godot/imported/WATER GROUND 4.png-2799d944530b3fe15a3d36c409e04a9f.ctex"]
+source_file="res://assets/sprite/CTB_test_sprite/pikachu-lets-go.jpg"
+dest_files=["res://.godot/imported/pikachu-lets-go.jpg-f13b692b117ab745fc9ce1422ebd8768.ctex"]
 
 [params]
 
