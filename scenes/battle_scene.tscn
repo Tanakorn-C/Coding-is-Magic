@@ -1,15 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://c3dr5tvihen87"]
+[gd_scene load_steps=9 format=3 uid="uid://c3dr5tvihen87"]
 
 [ext_resource type="Script" uid="uid://d2hof7sg8vvom" path="res://CharacterSprite.gd" id="1_idkgt"]
 [ext_resource type="Script" uid="uid://c6b7cop1bf7t" path="res://scenes/battle_scene.gd" id="1_pxwbd"]
 [ext_resource type="PackedScene" uid="uid://dw7njxkvgc3c5" path="res://Resources/enemy_button.tscn" id="2_0gp0h"]
 [ext_resource type="Script" uid="uid://b4ydawlpexe72" path="res://scenes/attack.gd" id="2_3oc74"]
 [ext_resource type="Resource" uid="uid://b71g0hvvxnnd5" path="res://Resources/YellowRat.tres" id="3_1i8jf"]
-[ext_resource type="Resource" uid="uid://d0t3l2peuutg3" path="res://Resources/RedChic.tres" id="4_svpld"]
-[ext_resource type="Resource" uid="uid://b8128tyjbtpoo" path="res://Resources/BlueFrog.tres" id="5_rum4d"]
 [ext_resource type="Resource" uid="uid://dmdn4lnwbnyuf" path="res://Resources/OrangeDragon.tres" id="6_rum4d"]
 [ext_resource type="Resource" uid="uid://oodkfo5oivbj" path="res://Resources/RedDragon.tres" id="7_3oc74"]
-[ext_resource type="Resource" uid="uid://2xtnmpvq6oll" path="res://Resources/BlackDragon.tres" id="8_0gp0h"]
+[ext_resource type="Texture2D" uid="uid://ddu2ktne5u6tk" path="res://assets/map/map 1 Magic Forest/Forest_Battle.png" id="9_3oc74"]
 
 [node name="BattleScene" type="Node2D" node_paths=PackedStringArray("player_group", "enemy_group", "timeline", "options")]
 script = ExtResource("1_pxwbd")
@@ -46,9 +44,18 @@ custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="UI/Timeline/TimelineSlot2"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.0
+offset_top = -15.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
 
@@ -57,9 +64,18 @@ custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="UI/Timeline/TimelineSlot3"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.0
+offset_top = -15.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
 
@@ -68,9 +84,18 @@ custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="UI/Timeline/TimelineSlot4"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.0
+offset_top = -15.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
 
@@ -79,9 +104,18 @@ custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="UI/Timeline/TimelineSlot5"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.0
+offset_top = -15.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
 
@@ -91,9 +125,18 @@ layout_mode = 2
 size_flags_horizontal = 4
 
 [node name="TextureRect" type="TextureRect" parent="UI/Timeline/TimelineSlot6"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.0
+offset_top = -15.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
 
@@ -103,10 +146,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -28.0
-offset_top = -97.0
-offset_right = 30.0
-offset_bottom = -66.0
+offset_left = 43.0
+offset_top = -61.0
+offset_right = 82.0
+offset_bottom = -39.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -114,7 +157,7 @@ grow_vertical = 0
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 8
-text = "Tackle
+text = "Slash
 "
 script = ExtResource("2_3oc74")
 
@@ -125,45 +168,64 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = 48.0
+offset_top = 31.0
+offset_right = 138.0
+offset_bottom = 75.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Players" type="Node2D" parent="."]
 
 [node name="Player" type="Sprite2D" parent="Players"]
-position = Vector2(58, 76)
+position = Vector2(139, 138)
 script = ExtResource("1_idkgt")
 character = ExtResource("3_1i8jf")
-
-[node name="Player2" type="Sprite2D" parent="Players"]
-position = Vector2(100, 105)
-script = ExtResource("1_idkgt")
-character = ExtResource("4_svpld")
-
-[node name="Player3" type="Sprite2D" parent="Players"]
-position = Vector2(63, 145)
-script = ExtResource("1_idkgt")
-character = ExtResource("5_rum4d")
 
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Enemy" type="Sprite2D" parent="Enemies"]
-position = Vector2(211, 100)
+position = Vector2(118, 83)
 script = ExtResource("1_idkgt")
 character = ExtResource("6_rum4d")
 
 [node name="Enemy2" type="Sprite2D" parent="Enemies"]
-position = Vector2(258, 137)
+position = Vector2(204, 92)
 script = ExtResource("1_idkgt")
 character = ExtResource("7_3oc74")
 
-[node name="Enemy3" type="Sprite2D" parent="Enemies"]
-position = Vector2(258, 72)
-script = ExtResource("1_idkgt")
-character = ExtResource("8_0gp0h")
+[node name="ForestBattle" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(160.5, 89.25)
+scale = Vector2(0.207682, 0.175293)
+texture = ExtResource("9_3oc74")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TurnHUD" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 72.0
+offset_right = 51.0
+offset_bottom = 95.0
+
+[node name="TurnLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 44.0
+offset_right = 49.0
+offset_bottom = 67.0
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 35.0
+offset_top = 36.0
+offset_right = 64.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 6
+text = "Turn 3"
 
 [connection signal="pressed" from="UI/Option/Attack" to="UI/Option/Attack" method="_on_pressed"]

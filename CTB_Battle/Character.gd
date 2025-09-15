@@ -1,6 +1,8 @@
 extends Resource
 class_name Character
  
+signal healthChanged
+
 @export var title : String
 @export var icon : Texture2D
 @export var texture : Texture2D
@@ -57,8 +59,7 @@ func add_vfx(type : String = ""):
  
 func get_attacked(type = ""):
 	add_vfx(type)
- 
- 
+
 func set_status(status_type : String):
 	add_vfx(status_type)
 	match status_type:
