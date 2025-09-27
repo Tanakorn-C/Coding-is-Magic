@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Coding Is Magic Project"
 run/main_scene="uid://c3dr5tvihen87"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="uid://c2qqpt8uvktfb"
 
 [autoload]
